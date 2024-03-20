@@ -293,13 +293,19 @@ a {
   border-radius: 40px;
 }
 .v-title {
+  color: #e6e5e5;
   font-weight: 450;
   font-size: 16px;
   margin-bottom: 4px;
   padding-right: 4px;
-  text-overflow: ellipsis "[..]";
-  min-width: 0;
-  color: #e6e5e5;
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
+  // overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c-title {
