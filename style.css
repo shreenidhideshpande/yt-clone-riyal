@@ -306,6 +306,10 @@ a {
 .c-title {
   font-size: 14px;
   color: #929292;
+  transition: all 0.1s ease;
+}
+.c-title:hover {
+  color: #fff;
 }
 
 .title-bundle {
