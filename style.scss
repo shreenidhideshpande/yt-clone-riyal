@@ -63,13 +63,14 @@ a {
     justify-content: center;
     box-sizing: border-box;
     height: 100%;
+    color: #333333;
     background-color: #272727;
     padding: 2px 24px;
     // border: none;
-    border: 1px solid #272727;
+    border: 1px solid #333333;
   }
   .searchbar {
-    font-weight: 450;
+    font-weight: 425;
     height: 100%;
     width: 50%;
     border-top-left-radius: 24px;
@@ -298,6 +299,7 @@ a {
   padding-right: 4px;
   text-overflow: ellipsis "[..]";
   min-width: 0;
+  color: #e6e5e5;
 }
 
 .c-title {
