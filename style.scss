@@ -69,6 +69,7 @@ a {
     border: 1px solid #272727;
   }
   .searchbar {
+    font-weight: 450;
     height: 100%;
     width: 50%;
     border-top-left-radius: 24px;
@@ -162,6 +163,7 @@ a {
   display: flex;
   flex-direction: column;
   font-size: 14px;
+  font-weight: 450;
   // border-bottom: 1px solid #dedede;
   // padding-bottom: 8px;
   a {
@@ -222,6 +224,7 @@ a {
   padding-left: 0;
   padding-bottom: 20px;
   font-size: 14px;
+  font-weight: 500;
 }
 .category {
   padding: 8px;
@@ -289,14 +292,17 @@ a {
   border-radius: 40px;
 }
 .v-title {
-  font-weight: 400;
+  font-weight: 450;
   font-size: 16px;
   margin-bottom: 4px;
   padding-right: 4px;
+  text-overflow: ellipsis "[..]";
+  min-width: 0;
 }
 
 .c-title {
   font-size: 14px;
+  font-weight: 450;
   color: #929292;
   transition: all 0.1s ease;
   &:hover {
