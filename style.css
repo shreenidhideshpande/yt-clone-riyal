@@ -180,6 +180,9 @@ a {
 
 .left-panel {
   padding-top: 8px;
+  padding-right: 20px;
+  border-right: 1px solid #272727;
+  width: 100%;
 }
 
 .panel-icons {
@@ -214,14 +217,15 @@ a {
   justify-content: left;
   border: none;
   height: 0.5px;
-  background-color: #dedede;
+  background-color: #c7c5c5;
   width: 100%;
+  opacity: 0.3;
 }
 
 .main-content {
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
+  padding-left: 32px;
 }
 
 .category-bar {
