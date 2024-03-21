@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html {
+  scrollbar-color: #272727 #131212;
+  scrollbar-width: 40px;
+}
+
 body {
   background-color: #0f0f0f;
   padding: 16px;
