@@ -30,7 +30,7 @@ a {
   display: flex;
   align-items: center;
   column-gap: 16px;
-  padding: 0 8px 0 0;
+  padding: 0 8px 0 8px;
 }
 .left-header #nav-icon {
   width: 24px;
@@ -184,10 +184,41 @@ a {
 }
 
 .left-panel {
+  transition: all 0.1s;
   padding-top: 8px;
   padding-right: 20px;
+  padding-left: 4px;
   border-right: 1px solid #272727;
   width: 100%;
+}
+
+.collapse-main {
+  transform: translateX(-6%);
+  transition: all 0.2s ease;
+}
+
+.collapsed-panel {
+  transition: all 0.2 ease;
+  max-width: 20%;
+  padding-left: 8px;
+  border: none;
+}
+.collapsed-panel .pair {
+  display: flex;
+  flex-direction: column;
+}
+.collapsed-panel .pair .collapsible {
+  font-size: 10px;
+  padding: 0;
+  padding-top: 8px;
+}
+.collapsed-panel .your-panel,
+.collapsed-panel .your-subs {
+  display: none;
+  transition: all 0.01s;
+}
+.collapsed-panel .left-panel-divider {
+  visibility: hidden;
 }
 
 .panel-icons {
@@ -203,7 +234,7 @@ a {
   display: flex;
   align-items: center;
   padding: 8px;
-  transition: all 0.1s ease;
+  transition: 0.1s;
   cursor: pointer;
   border-radius: 8px;
   margin-bottom: 2px;
@@ -231,6 +262,8 @@ a {
   display: flex;
   flex-direction: column;
   padding-left: 32px;
+  transform: all 0.2s;
+  max-width: 100%;
 }
 
 .category-bar {
