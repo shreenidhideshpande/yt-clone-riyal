@@ -265,17 +265,19 @@ a {
   display: flex;
   flex-direction: column;
   padding-left: 32px;
-  transform: all 0.2s;
+  transition: all 0.2s;
   max-width: 100%;
 }
 
 .category-bar {
   display: flex;
   flex-direction: row;
+  max-width: 100%;
   padding-left: 0;
   padding-bottom: 20px;
   font-size: 14px;
   font-weight: 500;
+  overflow: hidden;
 }
 
 .category {
@@ -312,29 +314,6 @@ a {
   .main-content {
     transform: translateX(-6%);
   }
-  .collapsed-panel {
-    transition: all 0.2 ease;
-    max-width: 20%;
-    padding-left: 8px;
-    border: none;
-  }
-  .collapsed-panel .pair {
-    display: flex;
-    flex-direction: column;
-  }
-  .collapsed-panel .pair .collapsible {
-    font-size: 10px;
-    padding: 0;
-    padding-top: 8px;
-  }
-  .collapsed-panel .your-panel,
-  .collapsed-panel .your-subs {
-    display: none;
-    transition: all 0.01s;
-  }
-  .collapsed-panel .left-panel-divider {
-    visibility: hidden;
-  }
 }
 @media (max-width: 900px) {
   .main {
@@ -343,34 +322,18 @@ a {
   .main-content {
     transform: translateX(-6%);
   }
-  .collapsed-panel {
-    transition: all 0.2 ease;
-    max-width: 20%;
-    padding-left: 8px;
-    border: none;
-  }
-  .collapsed-panel .pair {
-    display: flex;
-    flex-direction: column;
-  }
-  .collapsed-panel .pair .collapsible {
-    font-size: 10px;
-    padding: 0;
-    padding-top: 8px;
-  }
-  .collapsed-panel .your-panel,
-  .collapsed-panel .your-subs {
-    display: none;
-    transition: all 0.01s;
-  }
-  .collapsed-panel .left-panel-divider {
-    visibility: hidden;
-  }
 }
 @media (max-width: 600px) {
+  .main-content {
+    transform: translateX(-6%);
+    max-width: 560px;
+    padding-left: 0;
+  }
+  .main-content .category-bar {
+    font-size: 7px;
+  }
   .main {
     grid-template-columns: repeat(2, 1fr);
-    width: 560px;
   }
   .v-content {
     height: 240px;
@@ -382,37 +345,11 @@ a {
     height: 160px;
   }
   .v-content .v-title {
-    font-size: 8px;
+    font-size: 12px;
   }
   .v-content .c-title,
   .v-content .counters {
-    font-size: 7px;
-  }
-  .main-content {
-    transform: translateX(-6%);
-  }
-  .collapsed-panel {
-    transition: all 0.2 ease;
-    max-width: 20%;
-    padding-left: 8px;
-    border: none;
-  }
-  .collapsed-panel .pair {
-    display: flex;
-    flex-direction: column;
-  }
-  .collapsed-panel .pair .collapsible {
-    font-size: 10px;
-    padding: 0;
-    padding-top: 8px;
-  }
-  .collapsed-panel .your-panel,
-  .collapsed-panel .your-subs {
-    display: none;
-    transition: all 0.01s;
-  }
-  .collapsed-panel .left-panel-divider {
-    visibility: hidden;
+    font-size: 9px;
   }
 }
 .thumbnail {

@@ -273,16 +273,18 @@ a {
   flex-direction: column;
   // margin: 10px;
   padding-left: 32px;
-  transform: all 0.2s;
+  transition: all 0.2s;
   max-width: 100%;
 }
 .category-bar {
   display: flex;
   flex-direction: row;
+  max-width: 100%;
   padding-left: 0;
   padding-bottom: 20px;
   font-size: 14px;
   font-weight: 500;
+  overflow: hidden;
 }
 .category {
   padding: 8px;
@@ -317,33 +319,6 @@ a {
   .main-content {
     transform: translateX(-6%);
   }
-  .collapsed-panel {
-    transition: all 0.2 ease;
-    max-width: 20%;
-    padding-left: 8px;
-    border: none;
-
-    .pair {
-      display: flex;
-      flex-direction: column;
-      // justify-content: right;
-      // padding: 0px;
-      .collapsible {
-        font-size: 10px;
-        padding: 0;
-        padding-top: 8px;
-      }
-    }
-    .your-panel,
-    .your-subs {
-      display: none;
-      transition: all 0.01s;
-      // visibility: hidden;
-    }
-    .left-panel-divider {
-      visibility: hidden;
-    }
-  }
 }
 @media (max-width: 900px) {
   .main {
@@ -352,38 +327,18 @@ a {
   .main-content {
     transform: translateX(-6%);
   }
-  .collapsed-panel {
-    transition: all 0.2 ease;
-    max-width: 20%;
-    padding-left: 8px;
-    border: none;
-
-    .pair {
-      display: flex;
-      flex-direction: column;
-      // justify-content: right;
-      // padding: 0px;
-      .collapsible {
-        font-size: 10px;
-        padding: 0;
-        padding-top: 8px;
-      }
-    }
-    .your-panel,
-    .your-subs {
-      display: none;
-      transition: all 0.01s;
-      // visibility: hidden;
-    }
-    .left-panel-divider {
-      visibility: hidden;
-    }
-  }
 }
 @media (max-width: 600px) {
+  .main-content {
+    transform: translateX(-6%);
+    max-width: 560px;
+    padding-left: 0;
+    .category-bar {
+      font-size: 7px;
+    }
+  }
   .main {
     grid-template-columns: repeat(2, 1fr);
-    width: 560px;
   }
   .v-content {
     height: 240px;
@@ -394,42 +349,11 @@ a {
       height: 160px;
     }
     .v-title {
-      font-size: 8px;
+      font-size: 12px;
     }
     .c-title,
     .counters {
-      font-size: 7px;
-    }
-  }
-
-  .main-content {
-    transform: translateX(-6%);
-  }
-  .collapsed-panel {
-    transition: all 0.2 ease;
-    max-width: 20%;
-    padding-left: 8px;
-    border: none;
-
-    .pair {
-      display: flex;
-      flex-direction: column;
-      // justify-content: right;
-      // padding: 0px;
-      .collapsible {
-        font-size: 10px;
-        padding: 0;
-        padding-top: 8px;
-      }
-    }
-    .your-panel,
-    .your-subs {
-      display: none;
-      transition: all 0.01s;
-      // visibility: hidden;
-    }
-    .left-panel-divider {
-      visibility: hidden;
+      font-size: 9px;
     }
   }
 }

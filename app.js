@@ -10,8 +10,15 @@ function collapse() {
   mainContent.classList.toggle('collapse-main');
 }
 
-navIconContainer.addEventListener('click', collapse);
+function collapseNavBar() {
+  leftPanel.classList.toggle('collapsed-panel');
+}
+function collapseMain() {
+  mainContent.classList.toggle('collapse-main');
+}
 
+navIconContainer.addEventListener('click', collapse);
+// navIconContainer.addEventListener('click', if);
 // var matchMedia = window.matchMedia('(max-width: 600px)');
 // var x = window.matchMedia('(max-width: 1920px)');
 // var matchMedia = [
@@ -26,6 +33,9 @@ const z = window.matchMedia('(max-width: 1200px)');
 if (x.matches || y.matches || z.matches) {
   collapse();
 }
+// if (x.matches) {
+//   collapse();
+// }
 
 // function mediaCheck() {
 //   for (let i = 0; i < 3; i++) {
