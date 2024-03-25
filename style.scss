@@ -179,6 +179,10 @@ a {
   flex-direction: column;
   font-size: 14px;
   font-weight: 450;
+  background-color: #0f0f0f;
+  z-index: 2;
+  // opacity: 1;
+
   // border-bottom: 1px solid #dedede;
   // padding-bottom: 8px;
   a {
@@ -313,7 +317,7 @@ a {
   .main-content {
     transform: translateX(-6%);
   }
-  .left-panel {
+  .collapsed-panel {
     transition: all 0.2 ease;
     max-width: 20%;
     padding-left: 8px;
@@ -348,7 +352,7 @@ a {
   .main-content {
     transform: translateX(-6%);
   }
-  .left-panel {
+  .collapsed-panel {
     transition: all 0.2 ease;
     max-width: 20%;
     padding-left: 8px;

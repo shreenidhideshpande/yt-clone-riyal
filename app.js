@@ -11,3 +11,27 @@ function collapse() {
 }
 
 navIconContainer.addEventListener('click', collapse);
+
+// var matchMedia = window.matchMedia('(max-width: 600px)');
+// var x = window.matchMedia('(max-width: 1920px)');
+// var matchMedia = [
+//   window.matchMedia('(max-width: 600px)'),
+//   window.matchMedia('(max-width: 900px)'),
+//   window.matchMedia('(max-width: 1200px)'),
+// ];
+const x = window.matchMedia('(max-width: 600px)');
+const y = window.matchMedia('(max-width: 900px)');
+const z = window.matchMedia('(max-width: 1200px)');
+
+if (x.matches || y.matches || z.matches) {
+  collapse();
+}
+
+// function mediaCheck() {
+//   for (let i = 0; i < 3; i++) {
+//     if (matchMedia[i].matches) collapse();
+//   }
+// }
+// if (x.matches) {
+//   mediaCheck();
+// }
