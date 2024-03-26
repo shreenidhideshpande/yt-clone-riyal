@@ -18,6 +18,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: nowrap;
   width: 100%;
   height: 40px;
 }
@@ -158,10 +159,17 @@ a {
   margin-top: 4px;
 }
 
+.page-content-container {
+  min-height: 100vh;
+  min-width: 100vh;
+  padding: 0;
+}
+
 .page-content {
   display: grid;
   grid-template-columns: 1fr 9fr;
   padding-top: 16px;
+  max-width: 100%;
 }
 
 .left-panel,
@@ -326,11 +334,13 @@ a {
 @media (max-width: 600px) {
   .main-content {
     transform: translateX(-6%);
-    max-width: 560px;
-    padding-left: 0;
+    max-width: 100%;
+    padding-right: 0;
   }
   .main-content .category-bar {
     font-size: 7px;
+    overflow: hidden;
+    max-width: 100%;
   }
   .main {
     grid-template-columns: repeat(2, 1fr);
@@ -344,12 +354,37 @@ a {
     width: 260px;
     height: 160px;
   }
+  .v-content .logo {
+    height: 20px;
+    width: 20px;
+  }
   .v-content .v-title {
     font-size: 12px;
   }
   .v-content .c-title,
   .v-content .counters {
     font-size: 9px;
+  }
+  .left-header {
+    margin-right: 40px;
+  }
+  .left-header #yt-prem-icon {
+    height: 16px;
+  }
+  .right-header {
+    margin-left: 120px;
+  }
+  .center-header {
+    margin-left: 80px;
+  }
+  .center-header .searchbar {
+    font-size: small;
+    width: 100px;
+  }
+  .center-header .searchbar #search-icon,
+  .center-header .searchbar .search-icon-container {
+    height: 14px;
+    width: 14px;
   }
 }
 .thumbnail {
