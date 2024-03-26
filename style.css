@@ -333,7 +333,7 @@ a {
 }
 @media (max-width: 600px) {
   .main-content {
-    transform: translateX(-6%);
+    transform: translateX(-9%);
     max-width: 100%;
     padding-right: 0;
   }
@@ -372,7 +372,7 @@ a {
     height: 16px;
   }
   .right-header {
-    margin-left: 120px;
+    margin-left: 100px;
   }
   .center-header {
     margin-left: 80px;
